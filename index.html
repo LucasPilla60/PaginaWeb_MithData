@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MithData - Soluciones y Servicios de Data</title>
+  <link rel="icon" href="favicon.ico">
+  <style>
+    /* Reset básico y estilos globales */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #fff;
+    }
+    header {
+      background: #f5f5f5;
+      padding: 20px 10%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #333;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+    nav ul li {
+      margin-left: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #007BFF;
+    }
+    /* Sección Hero */
+    .hero {
+      background: url('hero.jpg') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    .hero a {
+      padding: 10px 20px;
+      background: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+    .hero a:hover {
+      background: #0056b3;
+    }
+    /* Secciones generales */
+    section {
+      padding: 60px 10%;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2em;
+    }
+    .services, .about, .contact {
+      max-width: 1200px;
+      margin: auto;
+    }
+    /* Lista de servicios */
+    .service-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .service-item {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      flex: 1;
+      margin: 10px;
+      min-width: 250px;
+      text-align: center;
+    }
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+      }
+      nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+      }
+      nav ul li {
+        margin: 10px 0;
+      }
+      .hero h1 {
+        font-size: 2.5em;
+      }
+      .service-list {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabecera y menú de navegación -->
+  <header>
+    <div class="logo">MithData</div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#acerca">Acerca de</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección Hero -->
+  <section class="hero" id="inicio" style="background-image: url('hero.jpg');">
+    <div class="hero-content">
+      <h1>Bienvenido a MithData</h1>
+      <p>Transformamos datos en oportunidades para tu negocio</p>
+      <a href="#servicios">Descubre nuestros servicios</a>
+    </div>
+  </section>
+
+  <!-- Sección de Servicios -->
+  <section id="servicios">
+    <div class="services">
+      <h2 class="section-title">Nuestros Servicios</h2>
+      <div class="service-list">
+        <div class="service-item">
+          <h3>Consultoría en Data</h3>
+          <p>Analizamos y optimizamos el uso de tus datos para generar valor.</p>
+        </div>
+        <div class="service-item">
+          <h3>Desarrollo de Software</h3>
+          <p>Aplicaciones a medida para la gestión y análisis de información.</p>
+        </div>
+        <div class="service-item">
+          <h3>Big Data & AI</h3>
+          <p>Implementamos soluciones de inteligencia artificial para potenciar tu negocio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Acerca de -->
+  <section id="acerca">
+    <div class="about">
+      <h2 class="section-title">Acerca de MithData</h2>
+      <p>
+        MithData es un emprendimiento dedicado a la transformación digital, utilizando la analítica de datos, el desarrollo de software y soluciones en inteligencia artificial para ayudar a empresas a tomar decisiones informadas. Nuestro enfoque minimalista y orientado a resultados asegura que cada solución se ajuste perfectamente a las necesidades específicas de nuestros clientes.
+      </p>
+    </div>
+  </section>
+
+  <!-- Sección de Contacto -->
+  <section id="contacto">
+    <div class="contact">
+      <h2 class="section-title">Contacto</h2>
+      <p>¿Tienes alguna consulta o proyecto en mente? Contáctanos y juntos encontraremos la mejor solución.</p>
+      <form action="https://formspree.io/f/your-form-id" method="POST" lang="es">
+        <div style="margin-bottom: 15px;">
+          <input type="text" name="name" placeholder="Nombre" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+        </div>
+        <div style="margin-bottom: 15px;">
+          <input type="email" name="_replyto" placeholder="Email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+        </div>
+        <div style="margin-bottom: 15px;">
+          <textarea name="message" placeholder="Mensaje" rows="5" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+        </div>
+        <button type="submit" style="padding: 10px 20px; background: #007BFF; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+          Enviar Mensaje
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 MithData. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
